@@ -30,22 +30,3 @@ if(total == number):
 else:
 
     print("{} is not an armstrong number...".format(number))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
