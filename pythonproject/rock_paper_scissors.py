@@ -64,24 +64,3 @@ while True:
         break
     
 print("\nUser's score: {}\nComputer's score: {}".format(user_score, computer_score))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
