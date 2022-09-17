@@ -39,3 +39,4 @@ while True:
         else:
             print(number,"is not a prime number...")
             print("-" * 25)
+            

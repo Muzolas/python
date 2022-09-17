@@ -10,4 +10,3 @@ def generate_name():
 
 for i in range(5):
     print(generate_name())
-
