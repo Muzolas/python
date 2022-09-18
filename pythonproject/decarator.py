@@ -1,3 +1,7 @@
+"""
+Decarator kullanımı.
+"""
+
 def extra(function): # decarator 
 
     def wrapper(numbers):  # fonksiyon içinde fonksiyon

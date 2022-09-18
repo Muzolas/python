@@ -1,6 +1,8 @@
-from random import randint
+"""
+Küçük çapta bir çarpım oyunu.
+"""
 
-""" Küçük çapta bir çarpım oyunu """
+from random import randint
 
 print("-" * 50)
 print("\t\t  Hoşgeldiniz")

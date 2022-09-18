@@ -1,3 +1,7 @@
+"""
+Metini tersine çeviren program.
+"""
+
 def reverse(value, output=[]):
 
     #range(start, stop, step)

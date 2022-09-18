@@ -1,8 +1,11 @@
 """
+Parola oluşturan bir program.
+
 string.digits: 0123456789
 string.punctuation: !"#$%&'()*+, -./:;<=>?@[\]^_`{|}~
 string.ascii_letters: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 """
+
 import random
 import string
 

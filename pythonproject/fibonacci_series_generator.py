@@ -1,3 +1,7 @@
+"""
+Generator ile fibonacci dizisi oluşturan program.
+"""
+
 def fibonacci():
 
     a = 1

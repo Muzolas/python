@@ -1,3 +1,7 @@
+"""
+Faktoriyel bulan program.
+"""
+
 print("-" * 50)
 print("\t  Factorial Discovery Program \n\tPress '-1' to exit the program.")
 print("-" * 50)

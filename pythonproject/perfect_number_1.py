@@ -4,6 +4,7 @@ Bunun için bir sayının mükemmel olup olmadığını dönen bir tane fonksiyo
 Bir sayının bölenlerinin toplamı kendine eşitse bu sayı mükemmel bir sayıdır.
 Örnek olarak 6 mükemmel bir sayıdır (1 + 2 + 3 = 6).
 """
+
 def perfect_number(number):
     
     i = 1

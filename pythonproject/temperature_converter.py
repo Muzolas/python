@@ -1,3 +1,7 @@
+"""
+Termometre değerlerini birbirine dönüştüren program.
+"""
+
 print("-" * 30)
 print("1- Celsius to fahrenheit")
 print("2- Fahrenheit to celsius")

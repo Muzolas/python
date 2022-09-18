@@ -1,3 +1,7 @@
+"""
+İsim oluşturucu.
+"""
+
 import random
 
 def generate_name():

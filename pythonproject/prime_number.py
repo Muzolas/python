@@ -1,10 +1,6 @@
 """
 Asal sayılar : 1'e ve kendisinden başka sayıya bölünmeyen sayılardır.
-
 """
-
-from xml.etree.ElementInclude import FatalIncludeError
-
 
 def prime_number(number):
 

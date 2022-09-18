@@ -4,7 +4,8 @@
 
 ( 3 basamaklı sayılar için 3.kuvveti ) o sayıya eşitse bu sayıya "Armstrong" sayısı denir.
 
-Örnek olarak : 1634 = 1^4 + 6^4 + 3^4 + 4^4"""
+Örnek olarak : 1634 = 1^4 + 6^4 + 3^4 + 4^4
+"""
 
 number = input("Enter a number: ")
 

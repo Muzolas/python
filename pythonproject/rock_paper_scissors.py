@@ -1,3 +1,7 @@
+"""
+Mini bir taş, kağıt, makas oyunu.
+"""
+
 import random
 from secrets import choice
 

@@ -1,3 +1,7 @@
+"""
+Mini adam asmaca oyunu.
+"""
+
 import random
 
 pics = ["""

@@ -1,3 +1,7 @@
+"""
+Şifreleme yapıp aynı zamanda çözümleme yapan bir program.
+"""
+
 def encrypt(text, value, output=""): # Şifreleme
 
     for char in text:

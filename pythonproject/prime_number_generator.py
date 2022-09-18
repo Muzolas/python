@@ -1,3 +1,7 @@
+"""
+Generator ile asal sayıları bulan bir program.
+"""
+
 def prime_number(number):
     
     i = 2
