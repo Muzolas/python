@@ -15,12 +15,12 @@ def clear():
     pass
 
 start=tk.Button(main,text='Start!',font='Helvetica 15 bold',fg='White',bg='Green',command = start)
-start.place(x=750,y=1000)
+start.place(x=800,y=1000)
 
 clear=tk.Button(main,text='Clear',font='Helvetica 15 bold',fg='White',bg='Red',command = clear)
-clear.place(x=1100,y=1000)
+clear.place(x=1150,y=1000)
 
 name=tk.Entry(main,font='Helvetica 15 bold')
-name.place(x=850,y=1000,height='40')
+name.place(x=900,y=1000,height='40')
 
 main.mainloop()
