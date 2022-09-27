@@ -1,26 +1,55 @@
+import sys
+import sqlite3
+from tkinter import *
 import tkinter as tk
+from time import *
 
-main=tk.Tk()
+class Window(tk.Tk):
 
-main.title('Sudoku!')
-label = tk.Label(main,text = '➤SUDOKU!',font='Times 20 bold')
-main.state('zoomed')
-label.pack()
-main.resizable(False,False)
+    def __init__(self):
 
-def start():
-    pass
+        # self.create_connection()
 
-def clear():
-    pass
+        def clear(self):
+            pass
 
-start=tk.Button(main,text='Start!',font='Helvetica 15 bold',fg='White',bg='Green',command = start)
-start.place(x=800,y=1000)
+        def start(self):
+            pass
 
-clear=tk.Button(main,text='Clear',font='Helvetica 15 bold',fg='White',bg='Red',command = clear)
-clear.place(x=1150,y=1000)
+        main = Tk()
+        main.title('Sudoku!')
+        main.state('zoomed')
+        main.resizable(False, False)
+        
+        title = Label(main, text='➤SUDOKU!', font='Times 20 bold')
+        title.pack(expand=1, anchor='n')
+        
+        start = Button(main, text='Start!', font='Helvetica 15 bold',fg='White', bg='Green', command=start)
+        start.place(x=750, y=1000, width=200)
 
-name=tk.Entry(main,font='Helvetica 15 bold')
-name.place(x=900,y=1000,height='40')
+        clear = Button(main, text='Clear', font='Helvetica 15 bold',fg='White', bg='Red', command=clear)
+        clear.place(x=970, y=1000, width=200)
 
-main.mainloop()
+        name = Entry(main, font='Helvetica 15 bold')
+        name.pack(expand=1, anchor='center')
+
+        for i in range(9):
+            for j in range(9):   
+                frame = Frame(master=main,relief=FLAT,bd=2)
+                frame.grid(row=i, column=j)
+                label = Label(master=frame)
+                label.pack(side=LEFT)
+
+        mainloop()
+
+    # def create_connection(self):
+
+    #     connection = sqlite3.connect("scoreboard.db")
+
+    #     self.cursor = connection.cursor()
+    #     self.cursor.execute("Create Table If not exists users (username TEXT,time Text)")
+
+    #     connection.commit()
+
+
+window = Window()
