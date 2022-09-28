@@ -1,55 +1,52 @@
-import sys
 import sqlite3
 from tkinter import *
-import tkinter as tk
 from time import *
 
-class Window(tk.Tk):
 
-    def __init__(self):
-
-        # self.create_connection()
-
-        def clear(self):
-            pass
-
-        def start(self):
-            pass
-
-        main = Tk()
-        main.title('Sudoku!')
-        main.state('zoomed')
-        main.resizable(False, False)
-        
-        title = Label(main, text='➤SUDOKU!', font='Times 20 bold')
-        title.pack(expand=1, anchor='n')
-        
-        start = Button(main, text='Start!', font='Helvetica 15 bold',fg='White', bg='Green', command=start)
-        start.place(x=750, y=1000, width=200)
-
-        clear = Button(main, text='Clear', font='Helvetica 15 bold',fg='White', bg='Red', command=clear)
-        clear.place(x=970, y=1000, width=200)
-
-        name = Entry(main, font='Helvetica 15 bold')
-        name.pack(expand=1, anchor='center')
-
-        for i in range(9):
-            for j in range(9):   
-                frame = Frame(master=main,relief=FLAT,bd=2)
-                frame.grid(row=i, column=j)
-                label = Label(master=frame)
-                label.pack(side=LEFT)
-
-        mainloop()
-
-    # def create_connection(self):
-
-    #     connection = sqlite3.connect("scoreboard.db")
-
-    #     self.cursor = connection.cursor()
-    #     self.cursor.execute("Create Table If not exists users (username TEXT,time Text)")
-
-    #     connection.commit()
+def clear():
+    pass
 
 
-window = Window()
+def start():
+    pass
+
+def time():
+    pass
+
+main = Tk()
+main.title('Sudoku!')
+main.state('zoomed')
+main.resizable(False, False)
+
+title = Label(main, text='➤SUDOKU!', font='Times 30 bold')
+title.pack(expand=1, anchor='n')
+
+squares = Label(main, width=100, height=100, bg='black')
+squares.place(x=660, y=120)
+
+for i in range(9):
+    for j in range(9):
+        frame = Frame(master=squares, relief=GROOVE, borderwidth=1)
+        frame.grid(row=i, column=j)
+        label = Label(master=frame, text=f'0')
+        label.pack(padx=25, pady=25)
+
+time = Label(main,font='Helvetica 15 bold',bg='gray',text='00.00.00',fg='white')
+time.place(x=900, y=940,height=50,width=120)
+
+start = Button(main, text='Start!', font='Helvetica 15 bold',
+               fg='White', bg='Green', bd=5,command=start)
+start.place(x=740, y=1000, width=200)
+
+clear = Button(main, text='Clear', font='Helvetica 15 bold',
+               fg='White', bg='Red' ,bd=5,command=clear)
+clear.place(x=980, y=1000, width=200)
+
+name = Entry(main, font='Helvetica 15 bold',bd=5)
+name.place(x=670, y=945, width=200, height=45)
+
+scoreboard = Button(main, text='Scoreboard', font='Helvetica 15 bold',
+                    fg='White', bg='#cff00FF7F',bd=5, command=time)
+scoreboard.place(x=1050, y=940, width=200)
+
+mainloop()
