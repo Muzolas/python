@@ -10,8 +10,10 @@ def clear():
 def start():
     pass
 
+
 def time():
     pass
+
 
 main = Tk()
 main.title('Sudoku!')
@@ -31,22 +33,23 @@ for i in range(9):
         label = Label(master=frame, text=f'0')
         label.pack(padx=25, pady=25)
 
-time = Label(main,font='Helvetica 15 bold',bg='gray',text='00.00.00',fg='white')
-time.place(x=900, y=940,height=50,width=120)
+time = Label(main, font='Helvetica 15 bold',
+             bg='gray', text='00.00.00', fg='white')
+time.place(x=900, y=940, height=50, width=120)
 
 start = Button(main, text='Start!', font='Helvetica 15 bold',
-               fg='White', bg='Green', bd=5,command=start)
+               fg='White', bg='Green', bd=5, command=start)
 start.place(x=740, y=1000, width=200)
 
 clear = Button(main, text='Clear', font='Helvetica 15 bold',
-               fg='White', bg='Red' ,bd=5,command=clear)
+               fg='White', bg='Red', bd=5, command=clear)
 clear.place(x=980, y=1000, width=200)
 
-name = Entry(main, font='Helvetica 15 bold',bd=5)
+name = Entry(main, font='Helvetica 15 bold', bd=5)
 name.place(x=670, y=945, width=200, height=45)
 
 scoreboard = Button(main, text='Scoreboard', font='Helvetica 15 bold',
-                    fg='White', bg='#cff00FF7F',bd=5, command=time)
+                    fg='White', bg='#cff00FF7F', bd=5, command=time)
 scoreboard.place(x=1050, y=940, width=200)
 
 mainloop()
