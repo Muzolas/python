@@ -15,6 +15,10 @@ def time():
     pass
 
 
+def scoreboard():
+    pass
+
+
 main = Tk()
 main.title('Sudoku!')
 main.state('zoomed')
@@ -49,7 +53,7 @@ name = Entry(main, font='Helvetica 15 bold', bd=5)
 name.place(x=670, y=945, width=200, height=45)
 
 scoreboard = Button(main, text='Scoreboard', font='Helvetica 15 bold',
-                    fg='White', bg='#cff00FF7F', bd=5, command=time)
+                    fg='White', bg='#cff00FF7F', bd=5, command=scoreboard)
 scoreboard.place(x=1050, y=940, width=200)
 
 mainloop()
