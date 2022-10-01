@@ -29,25 +29,23 @@ class Sudoku():
     title = Label(main, text='➤SUDOKU!', font='Times 30 bold')
     title.pack(expand=1, anchor='n')
 
-    squares = Label(main, width=100, height=100, bg='black')
+    squares = Label(main, bg='black')
     squares.place(x=660, y=120)
     
     numbers = Label(main,bg='black',fg='white')
-    numbers.place(x=660, y=800)
-    
+    numbers.place(x=660, y=750)
+
     for i in range(9):    
         for j in range(9):
-            frame = Frame(master=squares, relief=GROOVE, borderwidth=1)
-            frame.grid(row=i, column=j)
-            label = Label(master=frame, text=f'0')
-            label.pack(padx=25, pady=25)
-
+            square = Label(master=squares, relief=GROOVE, borderwidth=1,width=9,height=4)
+            square.grid(row=i, column=j)
+            
         for i in range(1,10):
 
             number = Button(master=numbers, relief=RAISED, borderwidth=1,fg='white')
             number.grid(row=j,column=i)
-            label1 = Label(master=number, text=[i],font="Helvetica 16 bold")
-            label1.pack(ipadx=20, ipady=20)
+            label1 = Label(master=number, text=[i],font="Helvetica 15 bold")
+            label1.pack(ipadx=22, ipady=20)
             
     time = Label(main, font='Helvetica 15 bold',
                  bg='gray', text='00.00.00', fg='white')
