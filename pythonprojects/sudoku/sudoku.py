@@ -4,7 +4,7 @@ from time import *
 import tkinter as tk
 
 
-class Sudoku():
+class Sudoku:
 
     def clear(self):
         pass
@@ -12,7 +12,7 @@ class Sudoku():
     def start(self):
         pass
 
-    def time():
+    def time(self):
         pass
 
     def scoreboard(self):

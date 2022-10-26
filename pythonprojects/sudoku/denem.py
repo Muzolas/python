@@ -32,7 +32,7 @@ class Calculator:
         self._stack = []
 
 
-class Window(self,tk.Tk):
+class Window(tk.Tk):
     is_reset = True
 
     def __init__(self):
@@ -151,7 +151,7 @@ class Window(self,tk.Tk):
             self.result.set('')
             self.is_reset = False
 
-    self.result.set(self.result.get() + self.calculator.add(key))
+        self.result.set(self.result.get() + self.calculator.add(key))
 
     def enter_clicked(self):
         self.result.set(self.result.get() + '=' + self.calculator.evaluate())
